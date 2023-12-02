@@ -13,6 +13,6 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         env:
-          USER_TEST_EMAIL: ${{ secrets.USER_TEST_EMAIL }}
-          USER_TEST_PASSWORD: ${{ secrets.USER_TEST_PASSWORD }}
-          API_URL: ${{ secrets.API_URL }}
+          USER_TEST_EMAIL: n.rivas03@ufromail.cl
+          USER_TEST_PASSWORD: RTIDlzk1
+          API_URL: http://3.138.52.135:3000
