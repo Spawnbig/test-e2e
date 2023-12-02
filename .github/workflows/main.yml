@@ -14,4 +14,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          start: npm run e2e
+          env:
+            USER_TEST_EMAIL: ${{secrets.USER_TEST_EMAIL}}
+            USER_TEST_PASSWORD: ${{secrets.USER_TEST_PASSWORD}}
+            API_URL: ${{secrets.API_URL}}
+          run: npm run e2e
